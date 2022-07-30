@@ -1,0 +1,136 @@
+body {
+  padding: 48px;
+}
+header {
+  padding-left:10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+header .logo-brand {
+  height: 28px;
+  width: 125px;
+}
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+}
+
+nav .icon-notification {
+  width: 24px;
+  height: 24px;
+  background-color: #9E9E9E;
+  cursor: pointer;
+}
+
+
+nav .user-profile {
+  height: 24px;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.user-profile .user-avatar {
+  width: 24px;
+  height: 24px;
+  background-color: cyan;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.user-profile .user-name {
+  flex: 1;
+}
+.user-profile .user-arrow {
+  margin-left: 15px;
+  width: 20px;
+  height: 20px;
+  background-color: black;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+main .item {
+  width: 100px;
+  height: 100px;
+  background-color: #9E9E9E;
+}
+
+@media only screen and (max-width: 414px) {
+  header .logo-brand {
+    height: 20px;
+    width: 100px;
+  }
+
+  .user-profile .user-name {
+    display: none;
+  }
+  .user-profile .user-arrow {
+    display: none;
+  }
+  body {
+    padding: 12px;
+  }
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+main #container {
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 4px;
+  flex: 1;
+  max-width: 800px;
+  height: 400px;
+}
+
+.hidden {
+  display: none;
+}
+
+.new-data {
+  background-color: #fff;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.button-add:hover {
+ background-color: purple;
+}
+
+.button-add:active {
+  background-color: red;
+ }
+
+ .list-container {
+  margin-top: 10px;
+ }
+
+ .list-item {
+  cursor: pointer;
+  
+ }
+
+ #checkbox:checked {
+ }
+
+
+ #checkbox:hover {
+}
+
+.accordion {
+  cursor: pointer;
+  height: 50px;
+  padding: 10px;
+}
